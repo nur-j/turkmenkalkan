@@ -82,7 +82,7 @@
               <div class="inner-content">
                 <div class="product-category-content">
                   <div class="content">
-                    <h3 class="title text-danger"><a href="shop.html">Erkekler üçin aýakgaplar</a></h3>
+                    <h3 class="title text-danger"><a href="{{ route('products.category', 1) }}">Erkekler üçin aýakgaplar</a></h3>
                   </div>
                 </div>
                 <div  class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-men.png') }}"></div>
@@ -97,7 +97,7 @@
               <div class="inner-content">
                 <div class="product-category-content">
                   <div class="content">
-                    <h3 class="title"><a href="shop.html">Zenanlar üçin aýakgaplar</a></h3>
+                    <h3 class="title"><a href="{{ route('products.category', 2) }}">Zenanlar üçin aýakgaplar</a></h3>
                   </div>
                 </div>
                 <div class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-women.png') }}"></div>
@@ -112,7 +112,7 @@
               <div class="inner-content">
                 <div class="product-category-content">
                   <div class="content">
-                    <h3 class="title"><a href="shop.html">Erkekler üçin täze aýakgaplar</a></h3>
+                    <h3 class="title"><a href="{{ route('products.category', 1) }}">Erkekler üçin täze aýakgaplar</a></h3>
                   </div>
                 </div>
                 <div class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-men-new.png') }}"></div>
@@ -132,7 +132,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title text-center">
-              <h3 class="title">Meşhur harytlarymyz</h3>
+              <h3 class="title">Harytlarymyz</h3>
               <div class="desc">
                 {{-- <p>There are many variations of passages of Lorem Ipsum available</p> --}}
               </div>

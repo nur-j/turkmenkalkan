@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Image;
+use App\Models\Color;
 
 class ProductController extends Controller
 {
@@ -27,8 +28,9 @@ class ProductController extends Controller
      */
     public function create()
     {
+        $colors = Color::all();
         $categories = Category::all();
-        return view('back.add_product', compact('categories'));
+        return view('back.add_product', compact('categories', 'colors'));
     }
 
     /**

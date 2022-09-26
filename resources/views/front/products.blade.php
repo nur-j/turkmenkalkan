@@ -181,20 +181,10 @@
                 <h4 class="sidebar-title">Reňkler</h4>
                 <div class="sidebar-color">
                   <ul class="color-list">
-                    <li data-bg-color="#39ed8c" class="active"></li>
-                    <li data-bg-color="#a6ed42"></li>
-                    <li data-bg-color="#daed39"></li>
-                    <li data-bg-color="#eed739"></li>
-                    <li data-bg-color="#eca23a"></li>
-                    <li data-bg-color="#f36768"></li>
-                    <li data-bg-color="#e14755"></li>
-                    <li data-bg-color="#dc83a3"></li>
-                    <li data-bg-color="#dc82da"></li>
-                    <li data-bg-color="#9a82dd"></li>
-                    <li data-bg-color="#82c2db"></li>
-                    <li data-bg-color="#6bd6b0"></li>
-                    <li data-bg-color="#9ed76b"></li>
-                    <li data-bg-color="#c8c289"></li>
+                    @foreach ($colors as $color)
+                      <li data-bg-color="#{{ $color->value }}"></li>
+                    @endforeach
+                    {{-- <li data-bg-color="#39ed8c" class="active"></li> --}}
                   </ul>
                 </div>
               </div>

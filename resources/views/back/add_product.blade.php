@@ -38,8 +38,12 @@
               <textarea name="description" id="description" cols="30" rows="5" class="form-control"></textarea>
             </div>
             <div class="form-group">
-              <label for="description">Reňkler</label>
-              <textarea name="description" id="description" cols="30" rows="5" class="form-control"></textarea>
+              <label for="colors">Reňkler</label>
+              <select class="form-control" multiple name="colors" id="colors">
+                @foreach ($colors as $color)
+                  <option value="{{ $color->value }}">{{ $color->title }}</option>    
+                @endforeach
+              </select>
             </div>
             <div class="form-group">
               <label for="category_id">Kategoriýasy</label>

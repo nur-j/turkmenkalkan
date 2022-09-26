@@ -96,7 +96,7 @@
       <!--== End Product Single Area Wrapper ==-->
 
       <!--== Start Product Area Wrapper ==-->
-      <section class="product-area product-best-seller-area">
+      {{-- <section class="product-area product-best-seller-area">
         <div class="container pt--0">
           <div class="row">
             <div class="col-12">
@@ -358,7 +358,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
       <!--== End Product Area Wrapper ==-->
 
     </main>

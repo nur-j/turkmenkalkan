@@ -52,15 +52,15 @@
                   <div class="shopping-search">
                     <button class="shopping-search-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch"><i class="pe-7s-search icon"></i></button>
                   </div>
-                  <div class="shopping-wishlist">
+                  {{-- <div class="shopping-wishlist">
                     <a class="shopping-wishlist-btn" href="shop-wishlist.html">
                       <i class="pe-7s-like icon"></i>
                     </a>
-                  </div>
+                  </div> --}}
                   <div class="shopping-cart">
-                    <button class="shopping-cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasCart" aria-controls="offcanvasRightLabel">
+                    <button class="shopping-cart-btn" type="button" {{-- data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasCart" aria-controls="offcanvasRightLabel" --}}>
                       <i class="pe-7s-shopbag icon"></i>
-                      <sup class="shop-count">02</sup>
+                      {{-- <sup class="shop-count">02</sup> --}}
                     </button>
                   </div>
                   <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
@@ -97,8 +97,9 @@
                   </li> --}}
                   <li class="has-submenu {{-- position-static --}}"><a href="{{ route('products') }}"><span>Önümlerimiz</span></a>
                     <ul class="submenu-nav">
-                      <li><a href="{{ route('products') }}"><span>Erkekler üçin</span></a></li>
-                      <li><a href="{{ route('products') }}"><span>Aýallar üçin</span></a></li>
+                      <li><a href="{{ route('products.category', 1) }}"><span>Erkekler üçin</span></a></li>
+                      <li><a href="{{ route('products.category', 2) }}"><span>Aýallar üçin</span></a></li>
+                      <li><a href="{{ route('products.category', 3) }}"><span>Çagalar üçin</span></a></li>
                     </ul>
                     {{-- <ul class="submenu-nav submenu-nav-mega column-3">
                       <li class="mega-menu-item"><a href="#/" class="mega-title"><span>Shop Layout</span></a>

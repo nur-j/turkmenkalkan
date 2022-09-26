@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\Color;
 
 class PageController extends Controller
 {
@@ -18,17 +19,26 @@ class PageController extends Controller
 
     public function products()
     {
+        $colors = Color::all();
         $products = Product::paginate(12);
         $categories = Category::all();
-        return view('front.products', compact('products', 'categories'));
+        return view('front.products', compact('products', 'categories', 'colors'));
     }
 
     public function products_by_category($id)
     {
+        $colors = Color::all();
         $category = Category::findOrFail($id);
         $categories = Category::all();
         $products = Product::where('category_id', $category->id)->paginate(12);
-        return view('front.products', compact('category', 'products', 'categories'));
+        return view('front.products', compact('category', 'products', 'categories', 'colors'));
+    }
+
+    public function products_by_color($id)
+    {
+        $colors = Color::all();
+        //$products = Product::where('colors')
+        return view('front.products');
     }
 
     public function product_single($id)

@@ -9,7 +9,7 @@
             <div class="widget-item">
               <div class="about-widget-wrap">
                 <div class="widget-logo-area">
-                  <a href="index.html">
+                  <a href="{{ route("home") }}">
                     <img class="logo-main" src="{{ asset('assetsf/img/logo.jpg') }}" width="131" height="34" alt="Logo" />
                   </a>
                 </div>
@@ -74,11 +74,11 @@
             <p class="copyright">© 2022 ТуркменКалкан. Все права защищены</p>
           </div>
           <div class="col-md-5 col-lg-6">
-            <div class="payment">
+            {{-- <div class="payment">
               <a href="account-login.html"><img src="assets/img/photos/payment-card.webp" width="192" height="21" alt="Payment Logo"></a>
-            </div>
+            </div> --}}
           </div>
-        </div>
+        </div>  
       </div>
     </div>
     <!--== End Footer Bottom ==-->

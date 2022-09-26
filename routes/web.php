@@ -37,5 +37,6 @@ Route::get('/products', [PageController::class, 'products'])->name('products');
 Route::get('/category/{id}', [PageController::class, 'products_by_category'])->name('products.category');
 Route::get('/products/{id}', [PageController::class, 'product_single'])->name('product.single');
 
-Route::get('/contact', [PageController::class, 'contact'])->name('contact');
-Route::get('/news', [PageController::class, 'news'])->name('news');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact.page');
+Route::get('/news', [PageController::class, 'news'])->name('news.page');
+Route::get('/about', [PageController::class, 'news'])->name('about.page');
