@@ -49,6 +49,7 @@ class ProductController extends Controller
             'title_ru' => 'required|string|max:255',
         ]);
 
+
         $product = new Product;
         $product->title_tm = $request->title_tm;
         $product->title_ru = $request->title_ru;
@@ -57,6 +58,9 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->price = $request->price;
         $product->save();
+
+        $colors = Color::find($request->colors);
+        $product->colors()->attach($colors);
 
         foreach ($request->file('images') as $imagefile) {
             $image = new Image;

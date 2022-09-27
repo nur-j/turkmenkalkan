@@ -39,9 +39,9 @@
             </div>
             <div class="form-group">
               <label for="colors">Reňkler</label>
-              <select class="form-control" multiple name="colors" id="colors">
+              <select class="form-control" multiple name="colors[]" id="colors">
                 @foreach ($colors as $color)
-                  <option value="{{ $color->value }}">{{ $color->title }}</option>    
+                  <option value="{{ $color->id }}">{{ $color->title }}</option>    
                 @endforeach
               </select>
             </div>

@@ -47,10 +47,10 @@
                       <div class="product-color">
                         <h6 class="title">Reňkler</h6>
                         <ul class="color-list">
-                          <li  data-bg-color="#586882"></li>
-                          <li class="active" data-bg-color="#505050"></li>
-                          <li data-bg-color="#73707a"></li>
-                          <li data-bg-color="#c7bb9b"></li>
+                          @foreach ($product->colors as $color)
+                            <li title="{{ $color->title }}"  data-bg-color="#{{ $color->value }}"></li>
+                          @endforeach
+                          {{-- <li class="active" data-bg-color="#505050"></li> --}}
                         </ul>
                       </div>
                       <div class="product-size">
@@ -58,6 +58,7 @@
                         <ul class="size-list">
                           <li>40</li>
                           <li class="active">41</li>
+                          {{-- <li class="active">41</li> --}}
                           <li>42</li>
                           <li>43</li>
                           <li>44</li>
