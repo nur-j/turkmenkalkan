@@ -57,4 +57,9 @@ class PageController extends Controller
         return view('front.news');
     }
 
+    public function about()
+    {
+        return view('front.about');
+    }
+
 }

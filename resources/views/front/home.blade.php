@@ -86,7 +86,7 @@
                   </div>
                 </div>
                 <div  class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-men.png') }}"></div>
-                <a  class="banner-link-overlay" href="shop.html"></a>
+                <a  class="banner-link-overlay" href="{{ route('products.category', 1) }}"></a>
               </div>
             </div>
             <!--== End Product Category Item ==-->
@@ -101,7 +101,7 @@
                   </div>
                 </div>
                 <div class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-women.png') }}"></div>
-                <a class="banner-link-overlay" href="shop.html"></a>
+                <a class="banner-link-overlay" href="{{ route('products.category', 2) }}"></a>
               </div>
             </div>
             <!--== End Product Category Item ==-->
@@ -116,7 +116,7 @@
                   </div>
                 </div>
                 <div class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-men-new.png') }}"></div>
-                <a class="banner-link-overlay" href="shop.html"></a>
+                <a class="banner-link-overlay" href="{{ route('products.category', 1) }}"></a>
               </div>
             </div>
             <!--== End Product Category Item ==-->
@@ -212,7 +212,7 @@
 
     <!--== Start Feature Area Wrapper ==-->
     <div class="feature-area mb-4">
-      <div class="container pb--0">
+      <div class="pb--0">
         <div class="row">
           <div class="col-12">
             <div class="feature-content-box">

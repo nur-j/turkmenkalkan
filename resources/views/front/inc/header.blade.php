@@ -14,8 +14,9 @@
                 <div class="header-info-items">
                   <div class="info-items">
                     <ul>
-                      <li class="number"><i class="fa fa-phone"></i><a href="tel://0123456789">(+993137) 36680/82, (+99312) 510443</a></li>
+                      <li class="number"><i class="fa fa-phone"></i><a href="tel://+99312510443">(+993137) 36680/82, (+99312) 510443</a></li>
                       <li class="email"><i class="fa fa-envelope"></i><a href="mailto://info@turkmenkalkan.com.tm">info@turkmenkalkan.com.tm</a></li>
+                      {{-- <li><select name="" id=""></select></li> --}}
                       {{-- <li class="account"><i class="fa fa-user"></i><a href="account-login.html">Account</a></li> --}}
                     </ul>
                   </div>
@@ -86,7 +87,7 @@
                       <li><a href="index-two.html"><span>Home Two</span></a></li>
                     </ul> --}}
                   </li>
-                  <li><a href="#"><span>Biz barada</span></a></li>
+                  <li><a href="{{ route('about.page') }}"><span>Biz barada</span></a></li>
                   {{-- <li class="has-submenu"><a href="#/"><span>Pages</span></a>
                     <ul class="submenu-nav">
                       <li><a href="account.html"><span>Account</span></a></li>
@@ -128,8 +129,8 @@
                       </li>
                     </ul> --}}
                   </li>
-                  <li class="has-submenu"><a href="#/"><span>Täzelikler</span></a></li>
-                  <li><a href="contact.html"><span>Habarlaşmak</span></a></li>
+                  <li class=""><a href="{{ route('news.page') }}"><span>Täzelikler</span></a></li>
+                  <li><a href="{{ route('contact.page') }}"><span>Habarlaşmak</span></a></li>
                 </ul>
               </div>
             </div>
