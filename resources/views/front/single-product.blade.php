@@ -57,7 +57,7 @@
                         <h6 class="title">Ölçegler</h6>
                         <ul class="size-list">
                           <li>40</li>
-                          <li class="active">41</li>
+                          <li>41</li>
                           {{-- <li class="active">41</li> --}}
                           <li>42</li>
                           <li>43</li>
@@ -71,10 +71,10 @@
                             <input type="text" title="Quantity" value="1">
                           </div>
                         </div>
-                        <a class="btn-theme" href="shop-cart.html">Sebede goş</a>
+                        <a class="btn-theme" href="#">Sebede goş</a>
                       </div>
                       <div class="product-wishlist-compare">
-                        <a href="shop-wishlist.html"><i class="pe-7s-like"></i>Halanlaryma goş</a>
+                        <a href="#"><i class="pe-7s-like"></i>Halanlaryma goş</a>
                       </div>
                       {{-- <div class="product-info-footer">
                         <h6 class="code"><span>Code :</span>Ch-256xl</h6>
