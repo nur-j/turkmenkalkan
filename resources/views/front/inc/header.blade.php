@@ -16,7 +16,11 @@
                     <ul>
                       <li class="number"><i class="fa fa-phone"></i><a href="tel://+99312510443">(+993137) 36680/82, (+99312) 510443</a></li>
                       <li class="email"><i class="fa fa-envelope"></i><a href="mailto://info@turkmenkalkan.com.tm">info@turkmenkalkan.com.tm</a></li>
-                      {{-- <li><select name="" id=""></select></li> --}}
+                      <li>
+                        <select class="lang-change" id="lang-change">
+                          
+                        </select>
+                      </li>
                       {{-- <li class="account"><i class="fa fa-user"></i><a href="account-login.html">Account</a></li> --}}
                     </ul>
                   </div>
@@ -42,7 +46,7 @@
               </div>
               <div class="header-middle-align-center">
                 <div class="header-search-area">
-                  <form class="header-searchbox">
+                  <form class="header-searchbox" action="#">
                     <input type="search" class="form-control" placeholder="Ady boýunça gözleg">
                     <button class="btn-submit" type="submit"><i class="pe-7s-search"></i></button>
                   </form>

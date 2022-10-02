@@ -155,19 +155,19 @@
                       </ul>
                     </div> --}}
                     <div class="product-action">
-                      <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
-                      <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
-                      <button type="button" class="btn-product-quick-view-open">
+                      <a class="btn-product-wishlist" href="#"><i class="fa fa-heart"></i></a>
+                      <a class="btn-product-cart" href="#"><i class="fa fa-shopping-cart"></i></a>
+                      <button type="button">
                         <i class="fa fa-arrows"></i>
                       </button>
-                      <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                      <a class="btn-product-compare" href="#"><i class="fa fa-random"></i></a>
                     </div>
-                    <a class="banner-link-overlay" href="shop.html"></a>
+                    <a class="banner-link-overlay" href="#"></a>
                   </div>
                   <div class="product-info">
                     <div class="category">
                       <ul>
-                        <li><a href="shop.html">{{ $product->category->title_tm }}</a></li>
+                        <li><a href="{{ route('products.category', $product->category_id) }}">{{ $product->category->title_tm }}</a></li>
                       </ul>
                     </div>
                     <h4 class="title"><a href="{{ route('product.single', $product->id) }}">{{ $product->title_tm }}</a></h4>

@@ -34,7 +34,7 @@
                   <div class="widget-menu-wrap">
                     <ul class="nav-menu">
                       <li><a href="#">Dükanlarymyz</a></li>
-                      <li><a href="#">Habarlaşmak</a></li>
+                      <li><a href="{{ route('contact.page') }}">Habarlaşmak</a></li>
                     </ul>
                   </div>
                 </div>
@@ -51,7 +51,7 @@
                 <div class="collapse-body">
                   <div class="widget-contact-wrap">
                     <ul>
-                      <li><span><i class="fa fa-map-marker"></i></span> Änew ş., Halkalaryň dostlugy köç,, jaý 24</li>
+                      <li><span><i class="fa fa-map-marker"></i></span> Änew ş., Halkalaryň dostlugy köç, jaý 24</li>
                       <li><span><i class="fa fa-phone"></i></span> <a href="#">(+993137) 36680/82, (+99312) 510443</a></li>
                       <li><span><i class="fa fa-envelope"></i></span> <a href="#">info@turkmenkalkan.com.tm</a></li>
                     </ul>
