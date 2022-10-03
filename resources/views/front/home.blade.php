@@ -179,6 +179,7 @@
           @endforeach
            
       </div>
+      <a class="btn-theme" href="{{ route('products') }}">Hemmesini görkez</a>
     </section>
     <!--== End Product Area Wrapper ==-->
 

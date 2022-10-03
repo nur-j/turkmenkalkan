@@ -12,7 +12,7 @@ class PageController extends Controller
 {
     public function home()
     {
-        $products = Product::all();
+        $products = Product::limit(12)->get();
         $categories = Category::all();
         return view('front.home', compact('products', 'categories'));
     }
