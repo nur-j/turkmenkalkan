@@ -35,6 +35,7 @@ Route::get('/', [PageController::class, 'home'])->name('home');
 
 Route::get('/products', [PageController::class, 'products'])->name('products');
 Route::get('/category/{id}', [PageController::class, 'products_by_category'])->name('products.category');
+Route::get('/products/search', [PageController::class, 'product_search'])->name('product.search');
 Route::get('/products/{id}', [PageController::class, 'product_single'])->name('product.single');
 
 Route::get('/contact', [PageController::class, 'contact'])->name('contact.page');

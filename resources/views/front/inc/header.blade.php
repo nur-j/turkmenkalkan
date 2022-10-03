@@ -46,8 +46,9 @@
               </div>
               <div class="header-middle-align-center">
                 <div class="header-search-area">
-                  <form class="header-searchbox" action="#">
-                    <input type="search" class="form-control" placeholder="Ady boýunça gözleg">
+                  <form class="header-searchbox" method="GET" action="{{ route('product.search') }}">
+                    @csrf
+                    <input type="search" class="form-control" placeholder="Ady boýunça gözleg" name="term">
                     <button class="btn-submit" type="submit"><i class="pe-7s-search"></i></button>
                   </form>
                 </div>

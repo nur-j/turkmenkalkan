@@ -47,6 +47,13 @@ class PageController extends Controller
         return view('front.single-product', compact('product'));
     }
 
+    public function product_search(Request $request) 
+    {   
+        $term = $request->term;
+        $products = Product::where('title_tm', 'Like', '%' . $term . '%')->paginate(6);
+        return view('front.search', compact('products', 'term'));
+    }
+
     public function contact()
     {
         return view('front.contact');
