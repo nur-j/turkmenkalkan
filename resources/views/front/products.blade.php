@@ -71,7 +71,9 @@
                             <div class="inner-content">
                               <div class="product-thumb">
                                 <a href="{{ route('product.single', $product->id) }}">
-                                  <img src="{{ asset($product->images[0]->url) }}" width="270" height="274" alt="Image-HasTech">
+                                  @if (isset($product->images[0]))
+                                    <img src="{{ asset($product->images[0]->url) }}" width="270" height="274" alt="Image-HasTech">
+                                  @endif
                                 </a>
                                 {{-- <div class="product-flag">
                                   <ul>
