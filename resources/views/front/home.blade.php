@@ -112,11 +112,11 @@
               <div class="inner-content">
                 <div class="product-category-content">
                   <div class="content">
-                    <h3 class="title"><a href="{{ route('products.category', 1) }}">Erkekler üçin täze aýakgaplar</a></h3>
+                    <h3 class="title"><a href="{{ route('products.category', 3) }}">Çagalar üçin aýakgaplar</a></h3>
                   </div>
                 </div>
-                <div class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-men-new.png') }}"></div>
-                <a class="banner-link-overlay" href="{{ route('products.category', 1) }}"></a>
+                <div class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-children.png') }}"></div>
+                <a class="banner-link-overlay" href="{{ route('products.category', 3) }}"></a>
               </div>
             </div>
             <!--== End Product Category Item ==-->
