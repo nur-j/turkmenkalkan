@@ -33,7 +33,7 @@
                 <div class="collapse-body">
                   <div class="widget-menu-wrap">
                     <ul class="nav-menu">
-                      <li><a href="#">Dükanlarymyz</a></li>
+                      <li><a href="{{ route('markets') }}">Dükanlarymyz</a></li>
                       <li><a href="{{ route('contact.page') }}">Habarlaşmak</a></li>
                     </ul>
                   </div>

@@ -69,4 +69,9 @@ class PageController extends Controller
         return view('front.about');
     }
 
+    public function markets()
+    {
+        return view('front.markets');
+    }
+
 }

@@ -42,6 +42,7 @@ Route::get('/products/{id}', [PageController::class, 'product_single'])->name('p
 Route::get('/contact', [PageController::class, 'contact'])->name('contact.page');
 Route::get('/news', [PageController::class, 'news'])->name('news.page');
 Route::get('/about', [PageController::class, 'about'])->name('about.page');
+Route::get('/markets', [PageController::class, 'markets'])->name('markets');
 
 /* Change lang */
 Route::get('/change-lang', [LanguageController::class, 'changeLang'])->name('change.lang');
