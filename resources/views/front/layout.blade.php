@@ -251,6 +251,15 @@
 <!--=== jQuery Custom Js ===-->>
 <script src="{{ asset('assetsf/js/custom.js') }}"></script>
 
+<script>
+  /* Change Language */
+
+  $('#changeLang').on('change', function(e) {
+      var url = "{{ route('change.lang') }}";
+      window.location.href = url + '?lang=' + $(this).val();
+    });
+</script>
+
 </body>
 
 </html>

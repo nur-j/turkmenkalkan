@@ -13,12 +13,14 @@
               <div class="header-top-align-end">
                 <div class="header-info-items">
                   <div class="info-items">
-                    <ul>
+                    <ul style="align-items: center">
                       <li class="number"><i class="fa fa-phone"></i><a href="tel://+99312510443">(+993137) 36680/82, (+99312) 510443</a></li>
                       <li class="email"><i class="fa fa-envelope"></i><a href="mailto://info@turkmenkalkan.com.tm">info@turkmenkalkan.com.tm</a></li>
                       <li>
-                        <select class="lang-change" id="lang-change">
-                          
+                        <select class="form-control changeLang" id="changeLang">
+                          <option value="tm" {{ session()->get('locale') == 'tm' ? 'selected' : '' }}>TM</option>
+                          <option value="ru" {{ session()->get('locale') == 'ru' ? 'selected' : '' }}>RU</option>
+                          <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>EN</option>
                         </select>
                       </li>
                       {{-- <li class="account"><i class="fa fa-user"></i><a href="account-login.html">Account</a></li> --}}
@@ -86,13 +88,13 @@
             <div class="header-align">
               <div class="header-navigation-area position-relative">
                 <ul class="main-menu nav">
-                  <li class=""><a href="{{ route('home') }}"><span>Baş sahypa</span></a>
+                  <li class=""><a href="{{ route('home') }}"><span>{{ __('general.home') }}</span></a>
                     {{-- <ul class="submenu-nav">
                       <li><a href="index.html"><span>Home One</span></a></li>
                       <li><a href="index-two.html"><span>Home Two</span></a></li>
                     </ul> --}}
                   </li>
-                  <li><a href="{{ route('about.page') }}"><span>Biz barada</span></a></li>
+                  <li><a href="{{ route('about.page') }}"><span>{{ __('general.about') }}</span></a></li>
                   {{-- <li class="has-submenu"><a href="#/"><span>Pages</span></a>
                     <ul class="submenu-nav">
                       <li><a href="account.html"><span>Account</span></a></li>
@@ -101,7 +103,7 @@
                       <li><a href="page-not-found.html"><span>Page Not Found</span></a></li>
                     </ul>
                   </li> --}}
-                  <li class="has-submenu {{-- position-static --}}"><a href="{{ route('products') }}"><span>Önümlerimiz</span></a>
+                  <li class="has-submenu {{-- position-static --}}"><a href="{{ route('products') }}"><span>{{ __('general.products') }}</span></a>
                     <ul class="submenu-nav">
                       <li><a href="{{ route('products.category', 1) }}"><span>Erkekler üçin</span></a></li>
                       <li><a href="{{ route('products.category', 2) }}"><span>Aýallar üçin</span></a></li>
@@ -134,8 +136,8 @@
                       </li>
                     </ul> --}}
                   </li>
-                  <li class=""><a href="{{ route('news.page') }}"><span>Täzelikler</span></a></li>
-                  <li><a href="{{ route('contact.page') }}"><span>Habarlaşmak</span></a></li>
+                  <li class=""><a href="{{ route('news.page') }}"><span>{{ __('general.news') }}</span></a></li>
+                  <li><a href="{{ route('contact.page') }}"><span>{{ __('general.contacts') }}</span></a></li>
                 </ul>
               </div>
             </div>

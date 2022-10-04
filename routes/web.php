@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,6 @@ Route::get('/products/{id}', [PageController::class, 'product_single'])->name('p
 Route::get('/contact', [PageController::class, 'contact'])->name('contact.page');
 Route::get('/news', [PageController::class, 'news'])->name('news.page');
 Route::get('/about', [PageController::class, 'about'])->name('about.page');
+
+/* Change lang */
+Route::get('/change-lang', [LanguageController::class, 'changeLang'])->name('change.lang');
