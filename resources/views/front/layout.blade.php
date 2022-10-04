@@ -179,17 +179,24 @@
     <div class="offcanvas-body">
       <div class="info-items">
         <ul>
+          <li>
+            <select class="form-control changeLang" id="changeLang">
+              <option value="tm" {{ session()->get('locale') == 'tm' ? 'selected' : '' }}>TM</option>
+              <option value="ru" {{ session()->get('locale') == 'ru' ? 'selected' : '' }}>RU</option>
+              <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>EN</option>
+            </select>
+          </li>
           <li class="number"><a href="tel://0123456789"><i class="fa fa-phone"></i> (+99312) 510443</a></li>
-          <li class="email"><a href="mailto://demo@example.com"><i class="fa fa-envelope"></i>demo@example.com</a></li>
-          <li class="account"><a href="account-login.html"><i class="fa fa-user"></i>Account</a></li>
+          <li class="email"><a href="mailto://info@turkmenkalkan.com.tm"><i class="fa fa-envelope"></i>info@turkmenkalkan.com.tm</a></li> 
+          {{-- <li class="account"><a href="account-login.html"><i class="fa fa-user"></i>Account</a></li> --}}
         </ul>
       </div>
       <!-- Mobile Menu Start -->
       <div class="mobile-menu-items">
         <ul class="nav-menu">
-          <li><a href="{{ route('home') }}">Baş sahypa</a>
+          <li><a href="{{ route('home') }}">{{ __('general.home') }}</a>
           </li>
-          <li><a href="{{ route('about.page') }}">Biz barada</a></li>
+          <li><a href="{{ route('about.page') }}">{{ __('general.about') }}</a></li>
           {{-- <li><a href="#">Pages</a>
             <ul class="sub-menu">
               <li><a href="account.html">Account</a></li>
@@ -198,11 +205,11 @@
               <li><a href="page-not-found.html">Page Not Found</a></li>
             </ul>
           </li> --}}
-          <li><a href="{{ route('products') }}">Önümlerimiz</a>
+          <li><a href="{{ route('products') }}">{{ __('general.products') }}</a>
             <ul class="sub-menu">
-              <li><a href="{{ route('products.category', 1) }}">Erkekler üçin</a></li>
-              <li><a href="{{ route('products.category', 2) }}">Zenanlar üçin</a></li>
-              <li><a href="{{ route('products.category', 3) }}">Çagalar üçin</a></li>
+              <li><a href="{{ route('products.category', 1) }}">{{ __('general.mens_category') }}</a></li>
+              <li><a href="{{ route('products.category', 2) }}">{{ __('general.womens_category') }}</a></li>
+              <li><a href="{{ route('products.category', 3) }}">{{ __('general.childrens_category') }}</a></li>
                 {{-- <ul class="sub-menu">
                   <li><a href="blog.html">Blog Grid</a></li>
                   <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
@@ -211,10 +218,10 @@
               {{-- </li> --}}
             </ul>
           </li>
-          <li><a href="{{ route('news.page') }}">Täzelikler</a>
+          <li><a href="{{ route('news.page') }}">{{ __('general.news') }}</a>
             
           </li>
-          <li><a href="{{ route('contact.page') }}">Habarlaşmak</a></li>
+          <li><a href="{{ route('contact.page') }}">{{ __('general.contacts') }}</a></li>
         </ul>
       </div>
       <!-- Mobile Menu End -->
@@ -254,7 +261,7 @@
 <script>
   /* Change Language */
 
-  $('#changeLang').on('change', function(e) {
+  $('.changeLang').on('change', function(e) {
       var url = "{{ route('change.lang') }}";
       window.location.href = url + '?lang=' + $(this).val();
     });
