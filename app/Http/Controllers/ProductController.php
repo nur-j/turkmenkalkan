@@ -18,7 +18,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $products = Product::paginate(10);
+        return view('back.products', compact('products'));
     }
 
     /**
@@ -69,6 +70,8 @@ class ProductController extends Controller
             $image->product_id = $product->id;
             $image->save();
         }
+
+        return redirect()->route('products.index')->withSuccess('Täze önüm goşuldy');
     }
 
     /**
@@ -113,6 +116,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Product::destroy($id);
+        return redirect()->back();
     }
 }
