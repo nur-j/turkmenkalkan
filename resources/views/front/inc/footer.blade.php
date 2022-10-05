@@ -65,13 +65,13 @@
       <div class="container pt--0 pb--0">
         <div class="row">
           <div class="col-md-7 col-lg-6">
-            <p class="copyright">© 2022 ТуркменКалкан. Все права защищены</p>
+            <p class="copyright">© 2022 {{ __('general.title') }}. {{ __('general.copyright') }}</p>
           </div>
           <div class="col-md-5 col-lg-6">
             {{-- <div class="payment">
               <a href="account-login.html"><img src="assets/img/photos/payment-card.webp" width="192" height="21" alt="Payment Logo"></a>
             </div> --}}
-          </div>
+          </div>s
         </div>  
       </div>
     </div>
