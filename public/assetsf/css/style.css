@@ -9708,7 +9708,15 @@ table p {
 
 @media screen and (max-width: 576px) {
   .swiper-container {
-    height: 200px;
+    height: 150px;
+  }
+
+  .product-category-thumb {
+    background-position-x: -390px;
+  }
+
+  .product-category-thumb .category_men {
+    background-position-x: -90px;
   }
   
 }

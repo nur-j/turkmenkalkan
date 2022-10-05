@@ -186,8 +186,8 @@
               <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>EN</option>
             </select>
           </li>
-          <li class="number"><a href="tel://0123456789"><i class="fa fa-phone"></i> (+99312) 510443</a></li>
-          <li class="email"><a href="mailto://info@turkmenkalkan.com.tm"><i class="fa fa-envelope"></i>info@turkmenkalkan.com.tm</a></li> 
+          {{-- <li class="number"><a href="tel://0123456789"><i class="fa fa-phone"></i> (+99312) 510443</a></li>
+          <li class="email"><a href="mailto://info@turkmenkalkan.com.tm"><i class="fa fa-envelope"></i>info@turkmenkalkan.com.tm</a></li> --}} 
           {{-- <li class="account"><a href="account-login.html"><i class="fa fa-user"></i>Account</a></li> --}}
         </ul>
       </div>

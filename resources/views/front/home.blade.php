@@ -85,7 +85,7 @@
                     <h3 class="title text-danger"><a href="{{ route('products.category', 1) }}">{{ __('general.for_men') }}</a></h3>
                   </div>
                 </div>
-                <div  class="product-category-thumb" data-bg-img="{{ asset('assetsf/img/banner-men.png') }}"></div>
+                <div  class="product-category-thumb category_men" data-bg-img="{{ asset('assetsf/img/banner-men.png') }}"></div>
                 <a  class="banner-link-overlay" href="{{ route('products.category', 1) }}"></a>
               </div>
             </div>
