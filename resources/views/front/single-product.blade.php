@@ -1,5 +1,5 @@
 @extends('front.layout')
-
+  @php $locale =  session()->get('locale') @endphp
 @section('content')
     <main class="main-content">
 
@@ -39,13 +39,27 @@
                   <div class="col-lg-6">
                     <!--== Start Product Info Area ==-->
                     <div class="product-single-info">
-                      <h3 class="main-title">{{ $product->title_tm }}</h3>
+                      <h3 class="main-title">
+                        @switch($locale)
+                          @case('tm')
+                            {{ $product->title_tm }}
+                            @break
+                          @case('ru')
+                            {{ $product->title_ru }}
+                            @break
+                          @case('en')
+                            {{ $product->title_en }}
+                            @break
+                          @default
+                            {{ $product->title_tm }}
+                        @endswitch
+                      </h3>
                       {{-- <div class="prices">
                         <span class="price">$20.19</span>
                       </div> --}}
                       <p>{{ $product->description }}</p>
                       <div class="product-color">
-                        <h6 class="title">Reňkler</h6>
+                        <h6 class="title">{{ __('general.colors') }}</h6>
                         <ul class="color-list">
                           @foreach ($product->colors as $color)
                             <li title="{{ $color->title }}"  data-bg-color="#{{ $color->value }}"></li>
@@ -54,7 +68,7 @@
                         </ul>
                       </div>
                       <div class="product-size">
-                        <h6 class="title">Ölçegler</h6>
+                        <h6 class="title">{{ __('general.sizes') }}</h6>
                         <ul class="size-list">
                           <li>40</li>
                           <li>41</li>
@@ -71,10 +85,10 @@
                             <input type="text" title="Quantity" value="1">
                           </div>
                         </div>
-                        <a class="btn-theme" href="#">Sebede goş</a>
+                        <a class="btn-theme" href="#">{{ __('general.add_to_cart') }}</a>
                       </div>
                       <div class="product-wishlist-compare">
-                        <a href="#"><i class="pe-7s-like"></i>Halanlaryma goş</a>
+                        <a href="#"><i class="pe-7s-like"></i>{{ __('general.add_to_wishlist') }}</a>
                       </div>
                       {{-- <div class="product-info-footer">
                         <h6 class="code"><span>Code :</span>Ch-256xl</h6>

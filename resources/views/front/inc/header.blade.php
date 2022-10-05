@@ -50,7 +50,7 @@
                 <div class="header-search-area">
                   <form class="header-searchbox" method="GET" action="{{ route('product.search') }}">
                     @csrf
-                    <input type="search" class="form-control" placeholder="Ady boýunça gözleg" name="term">
+                    <input type="search" class="form-control" placeholder="{{ __('general.search') }} ..." name="term">
                     <button class="btn-submit" type="submit"><i class="pe-7s-search"></i></button>
                   </form>
                 </div>
@@ -105,9 +105,9 @@
                   </li> --}}
                   <li class="has-submenu {{-- position-static --}}"><a href="{{ route('products') }}"><span>{{ __('general.products') }}</span></a>
                     <ul class="submenu-nav">
-                      <li><a href="{{ route('products.category', 1) }}"><span>Erkekler üçin</span></a></li>
-                      <li><a href="{{ route('products.category', 2) }}"><span>Aýallar üçin</span></a></li>
-                      <li><a href="{{ route('products.category', 3) }}"><span>Çagalar üçin</span></a></li>
+                      <li><a href="{{ route('products.category', 1) }}"><span>{{ __('general.mens_category') }}</span></a></li>
+                      <li><a href="{{ route('products.category', 2) }}"><span>{{ __('general.womens_category') }}</span></a></li>
+                      <li><a href="{{ route('products.category', 3) }}"><span>{{ __('general.childrens_category') }}</span></a></li>
                     </ul>
                     {{-- <ul class="submenu-nav submenu-nav-mega column-3">
                       <li class="mega-menu-item"><a href="#/" class="mega-title"><span>Shop Layout</span></a>

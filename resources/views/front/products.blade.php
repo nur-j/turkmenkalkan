@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+  @php $locale = session()->get('locale'); @endphp
   <main class="main-content">
     <!--== Start Page Header Area Wrapper ==-->
     {{-- <div class="page-header-area" data-bg-img="assets/img/photos/bg3.webp">
@@ -34,7 +36,21 @@
                 <div class="shop-top-bar">
                   <div class="shop-top-left">
                     @if ( isset($category) ) 
-                      <p class="pagination-line">Bu kategoriýada <a href="#">{{ $category->products->count() }}</a> sany haryt bar</p>
+                      <p class="pagination-line">
+                        @switch($locale)
+                          @case('tm')
+                            Bu kategoriýada <a href="#">{{ $category->products->count() }}</a> sany haryt bar
+                            @break
+                          @case('ru')
+                            <a href="#">{{ $category->products->count() }}</a> элементов в этой категории
+                            @break
+                          @case('en')
+                            <a href="#">{{ $category->products->count() }}</a> items
+                            @break
+                          @default
+                            Bu kategoriýada <a href="#">{{ $category->products->count() }}</a> sany haryt bar
+                        @endswitch
+                      </p>
                     @endif
                     
                   </div>
@@ -93,10 +109,42 @@
                               <div class="product-info">
                                 <div class="category">
                                   <ul>
-                                    <li><a href="{{ route('products.category', $product->category->id) }}">{{ $product->category->title_tm }}</a></li>
+                                    <li>
+                                      <a href="{{ route('products.category', $product->category->id) }}">
+                                        @switch($locale)
+                                          @case('tm')
+                                            {{ $product->category->title_tm }}
+                                            @break
+                                          @case('ru')
+                                            {{ $product->category->title_ru }}
+                                            @break
+                                          @case('en')
+                                            {{ $product->category->title_en }}
+                                            @break
+                                          @default
+                                            {{ $product->category->title_tm }}
+                                        @endswitch
+                                      </a>
+                                  </li>
                                   </ul>
                                 </div>
-                                <h4 class="title"><a href="{{ route('product.single', $product->id) }}">{{ $product->title_tm }}</a></h4>
+                                <h4 class="title">
+                                  <a href="{{ route('product.single', $product->id) }}">
+                                    @switch($locale)
+                                      @case('tm')
+                                        {{ $product->title_tm }}
+                                        @break
+                                      @case('ru')
+                                        {{ $product->title_ru }}
+                                        @break
+                                      @case('en')
+                                        {{ $product->title_en }}
+                                        @break
+                                      @default
+                                        {{ $product->title_tm }}
+                                    @endswitch
+                                  </a>
+                                </h4>
                                 {{-- <div class="prices">
                                   <span class="price-old">$300</span>
                                   <span class="sep">-</span>
@@ -162,11 +210,29 @@
           <div class="col-xl-3">
             <div class="shop-sidebar">
               <div class="shop-sidebar-category">
-                <h4 class="sidebar-title">Top Categories</h4>
+                <h4 class="sidebar-title">{{ __('general.categories') }}</h4>
                 <div class="sidebar-category">
                   <ul class="category-list mb--0">
                     @foreach ($categories as $cat)
-                      <li><a href="{{ route('products.category', $cat->id) }}"> {{ $cat->title_tm }}<span>({{ $cat->products->count() }})</span></a></li>
+                      <li>
+                        <a href="{{ route('products.category', $cat->id) }}"> 
+                          @switch($locale)
+                            @case('tm')
+                              {{ $cat->title_tm }}
+                              @break
+                            @case('ru')
+                              {{ $cat->title_ru }}
+                              @break
+                            @case('en')
+                              {{ $cat->title_en }}
+                              @break
+                            @default
+                              {{ $cat->title_tm }}
+                          @endswitch
+                          
+                          <span>({{ $cat->products->count() }})</span>
+                        </a>
+                      </li>
                     @endforeach
                   </ul>
                 </div>
@@ -180,7 +246,7 @@
               </div> --}}
 
               <div class="shop-sidebar-color">
-                <h4 class="sidebar-title">Reňkler</h4>
+                <h4 class="sidebar-title">{{ __('general.colors') }}</h4>
                 <div class="sidebar-color">
                   <ul class="color-list">
                     @foreach ($colors as $color)

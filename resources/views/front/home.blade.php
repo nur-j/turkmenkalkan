@@ -140,6 +140,9 @@
           </div>
         </div>
         <div class="row">
+          @php
+            $locale = session()->get('locale');
+          @endphp
           @foreach ($products as $product)
             <div class="col-sm-6 col-lg-3">
               <!--== Start Product Item ==-->
@@ -167,10 +170,43 @@
                   <div class="product-info">
                     <div class="category">
                       <ul>
-                        <li><a href="{{ route('products.category', $product->category_id) }}">{{ $product->category->title_tm }}</a></li>
+                        <li>
+                          <a href="{{ route('products.category', $product->category_id) }}">
+                            @switch($locale)
+                              @case('tm')
+                                {{ $product->category->title_tm }}
+                                @break
+                              @case('ru')
+                                {{ $product->category->title_ru }}
+                                @break
+                              @case('en')
+                                {{ $product->category->title_en }}
+                                @break
+                              @default
+                                {{ $product->category->title_tm }}
+                            @endswitch
+                          </a>
+                        </li>
                       </ul>
                     </div>
-                    <h4 class="title"><a href="{{ route('product.single', $product->id) }}">{{ $product->title_tm }}</a></h4>
+                    <h4 class="title">
+                      <a href="{{ route('product.single', $product->id) }}">
+                        @switch($locale)
+                          @case('tm')
+                            {{ $product->title_tm }}
+                            @break
+                          @case('ru')
+                            {{ $product->title_ru }}
+                            @break
+                          @case('en')
+                            {{ $product->title_en }}
+                            @break
+                          @default
+                            {{ $product->title_tm }}
+                        @endswitch
+                        
+                      </a>
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -179,7 +215,7 @@
           @endforeach
            
       </div>
-      <a class="btn-theme" href="{{ route('products') }}">Hemmesini görkez</a>
+      <a class="btn-theme" href="{{ route('products') }}">{{ __('general.show_all') }}</a>
     </section>
     <!--== End Product Area Wrapper ==-->
 
@@ -225,7 +261,7 @@
                         <img class="icon-img" src="assetsf/img/icons/1.webp" width="55" height="41" alt="Icon-HasTech">
                       </div>
                       <div class="content">
-                        <h5 class="title">Eltip bermek hyzmaty</h5>
+                        <h5 class="title">{{ __('general.delivery') }}</h5>
                       </div>
                     </div>
                   </div>
@@ -237,7 +273,7 @@
                         <img class="icon-img" src="assetsf/img/icons/2.webp" width="35" height="41" alt="Icon-HasTech">
                       </div>
                       <div class="content">
-                        <h5 class="title">Ynamly töleg</h5>
+                        <h5 class="title">{{ __('general.safe_payment') }}</h5>
                       </div>
                     </div>
                   </div>
@@ -261,7 +297,7 @@
                         <img class="icon-img" src="assetsf/img/icons/4.webp" width="43" height="41" alt="Icon-HasTech">
                       </div>
                       <div class="content">
-                        <h5 class="title">24 x 7 Onlaýn hyzmat</h5>
+                        <h5 class="title">24 x 7 {{ __('general.online_service') }}</h5>
                       </div>
                     </div>
                   </div>
