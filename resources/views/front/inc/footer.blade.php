@@ -26,8 +26,8 @@
                 <div class="collapse-body">
                   <div class="widget-contact-wrap">
                     <ul>
-                      <li><span><i class="fa fa-map-marker"></i></span> Änew ş., Halkalaryň dostlugy köç, jaý 24</li>
-                      <li><span><i class="fa fa-phone"></i></span> <a href="#">(+993137) 36680/82, (+99312) 510443</a></li>
+                      <li><span><i class="fa fa-map-marker"></i></span> {{ __('general.address_real') }}</li>
+                      <li><span><i class="fa fa-phone"></i></span> <a href="#">(+993 137) 36680/82, (+993 12) 510443</a></li>
                       <li><span><i class="fa fa-envelope"></i></span> <a href="#">info@turkmenkalkan.com.tm</a></li>
                     </ul>
                   </div>
@@ -45,9 +45,9 @@
                 <div class="collapse-body">
                   <div class="widget-menu-wrap">
                     <ul class="nav-menu" style="color: white">
-                      <li >Aşgabat ş. Oguzhan k. 3 jaý <br> (+993 61 457903)</li>
+                      <li >{{ __('general.store1') }} <br> (+993 61) 457903</li>
                       <hr>
-                      <li>Aşgabat ş. Ata Döwletow k. 46A jaý <br> (+993 65 712975)</li>
+                      <li>{{ __('general.store2') }} <br> (+993 65) 712975</li>
                     </ul>
                   </div>
                 </div>

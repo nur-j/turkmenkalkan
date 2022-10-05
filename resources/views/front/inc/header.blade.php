@@ -82,7 +82,7 @@
       </div>
     </div>
     <div class="header-area header-default">
-      <div class="container">
+      <div class="container" style="max-width: 100%">
         <div class="row no-gutter align-items-center position-relative">
           <div class="col-12">
             <div class="header-align">

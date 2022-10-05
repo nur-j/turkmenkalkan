@@ -25,4 +25,8 @@ return array (
   'information' => 'Maglumat',
   'stores' => 'Dükanlarymyz',
   'address' => 'Salgymyz',
+  'address_real' => 'Änew ş., Halklaryň dostlugy köç., jaý 24',
+  'store1' => 'Aşgabat ş. Oguzhan köç. 3 jaý',
+  'store2' => 'Aşgabat ş. Ata Döwletow köç. 46A jaý',
+  'copyright' => 'Ähli hukuklary goralan',
 );

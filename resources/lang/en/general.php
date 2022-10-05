@@ -25,4 +25,8 @@ return array (
   'address' => 'Address',
   'information' => 'Information',
   'stores' => 'Our stores',
+  'address_real' => 'Annau city, Halklaryn dostlugy st. 24',
+  'store1' => 'Ashgabat city, Oguzhan st., 3',
+  'store2' => 'Ashgabat city, Ata Dovletov st., 46A',
+  'copyright' => 'All rights reserved',
 );
