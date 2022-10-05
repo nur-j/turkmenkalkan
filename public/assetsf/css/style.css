@@ -9463,8 +9463,8 @@ table p {
 }
 .footer-area .widget-collapsed-title:before {
   font-family: "IcoFont";
-  font-size: 14px;
-  content: "";
+  font-size: 18px;
+  content: "⮟";
   position: absolute;
   right: 0;
   height: 100%;
@@ -9472,7 +9472,7 @@ table p {
   text-align: center;
 }
 .footer-area .widget-collapsed-title:not(.collapsed):before {
-  content: "";
+  content: "⮝";
   font-family: "IcoFont";
 }
 .footer-area .widget-collapse-body {
