@@ -11,7 +11,7 @@
           <div class="col-xl-9">
             <div class="contact-form-wrap" data-aos="fade-right">
               <div class="contact-form-title">
-                <h2 class="title">Öz pikiriňizi biziň bilen paýlaşyň!</h2>
+                <h2 class="title">{{ __('') }}</h2>
               </div>
               <!--== Start Contact Form ==-->
               <div class="contact-form">

@@ -2247,7 +2247,8 @@ table p {
 }
 @media only screen and (max-width: 575px) {
   .home-slider-area .home-slider-container .home-slider-wrapper.slider-default .slider-content-area {
-    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 .home-slider-area .home-slider-container .home-slider-wrapper.slider-default .slider-content-area .container {
@@ -9701,6 +9702,15 @@ table p {
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-container {
+    height: 200px;
+  }
+  
 }
 
 /* PAGINATION */
@@ -9713,3 +9723,4 @@ table p {
 .page-link {
   color: #eb3e32;
 }
+

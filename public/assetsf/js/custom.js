@@ -93,6 +93,7 @@
       slidesPerGroup: 1,
       loop: true,
       speed: 500,
+      autoplay: true,
       spaceBetween: 0,
       effect: 'fade',
       autoHeight: true, //enable auto height
@@ -124,8 +125,9 @@
     var productSliderCol4 = new Swiper('.product-slider-col4-container', {
       slidesPerView : 4,
       slidesPerGroup: 1,
-      allowTouchMove: false,
+      allowTouchMove: true,
       spaceBetween: 30,
+      autoplay: true,
       speed: 600,
       navigation: {
         nextEl: '.product-swiper-btn-next',
