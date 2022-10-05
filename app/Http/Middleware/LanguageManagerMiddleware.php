@@ -20,8 +20,8 @@ class LanguageManagerMiddleware
         if (session()->has('locale')) {
             App::setLocale(session()->get('locale'));
         } else {
-            session()->push('locale', 'tm');
             App::setLocale('tm');
+            session()->put('locale', 'tm');
         }
         return $next($request);
     }
