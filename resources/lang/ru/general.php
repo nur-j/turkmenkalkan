@@ -22,4 +22,7 @@ return array (
   'delivery' => 'Доставка',
   'online_service' => 'Онлайн служба',
   'safe_payment' => 'Надежная оплата',
+  'stores' => 'Магазины',
+  'information' => 'Информация',
+  'address' => 'Адрес',
 );

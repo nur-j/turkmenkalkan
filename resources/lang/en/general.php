@@ -22,4 +22,7 @@ return array (
   'delivery' => 'Delivery',
   'online_service' => 'Online service',
   'safe_payment' => 'Safe payment',
+  'address' => 'Address',
+  'information' => 'Information',
+  'stores' => 'Our stores',
 );

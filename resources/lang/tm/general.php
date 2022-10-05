@@ -22,4 +22,7 @@ return array (
   'delivery' => 'Eltip bermek hyzmaty',
   'safe_payment' => 'Ynamly töleg',
   'online_service' => 'Onlaýn hyzmat',
+  'information' => 'Maglumat',
+  'stores' => 'Dükanlarymyz',
+  'address' => 'Salgymyz',
 );
