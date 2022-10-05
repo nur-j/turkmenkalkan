@@ -9715,7 +9715,7 @@ table p {
     background-position-x: -390px;
   }
 
-  .product-category-thumb .category_men {
+  .product-category-thumb.category_men {
     background-position-x: -90px;
   }
   
