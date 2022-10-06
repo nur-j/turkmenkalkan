@@ -11,7 +11,7 @@
           <div class="col-xl-9">
             <div class="contact-form-wrap" data-aos="fade-right">
               <div class="contact-form-title">
-                <h2 class="title">{{ __('') }}</h2>
+                <h2 class="title">{{ __('contacts.contacts_us_text') }}</h2>
               </div>
               <!--== Start Contact Form ==-->
               <div class="contact-form">
@@ -19,27 +19,27 @@
                   <div class="row row-gutter-20">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input class="form-control" type="text" name="con_name" placeholder="Adyňyz">
+                        <input class="form-control" type="text" name="con_name" placeholder="{{ __('contacts.name') }}">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input class="form-control" type="email" name="con_email" placeholder="Email salgyňyz">
+                        <input class="form-control" type="email" name="con_email" placeholder="{{ __('contacts.email') }}">
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Tema">
+                        <input class="form-control" type="text" placeholder="{{ __('contacts.theme') }}">
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-group mb--0">
-                        <textarea class="form-control" name="con_message" placeholder="Habar"></textarea>
+                        <textarea class="form-control" name="con_message" placeholder="{{ __('contacts.message') }}"></textarea>
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-group mb--0">
-                        <button class="btn-theme" type="submit">Ibermek</button>
+                        <button class="btn-theme" type="submit">{{ __('contacts.send') }}</button>
                       </div>
                     </div>
                   </div>
@@ -56,18 +56,18 @@
                   <div class="col-lg-4 col-xl-12">
                     <div class="info-item"  data-aos="fade-left">
                       <div class="info">
-                        <h5 class="title">Salgymyz</h5>
-                        <p>Änew ş., Halkalaryň dostlugy köç, jaý 24</p>
+                        <h5 class="title">{{ __('general.address') }}</h5>
+                        <p>{{ __('general.address_real') }}</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 col-xl-12">
                     <div class="info-item"  data-aos="fade-left" data-aos-delay="60">
                       <div class="info">
-                        <h5 class="title">Telefon</h5>
+                        <h5 class="title">{{ __('contacts.phone') }}</h5>
                         <p>
-                          <a href="tel://+99313736680"> (+993137) 36680/82</a><br>
-                          <a href="tel://+99312510443">(+99312) 510443</a>
+                          <a href="tel://+99313736680"> (+993 137) 36680/82</a><br>
+                          <a href="tel://+99312510443">(+993 12) 510443</a>
                         </p>
                       </div>
                     </div>

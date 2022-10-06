@@ -46,4 +46,4 @@ Route::get('/about', [PageController::class, 'about'])->name('about.page');
 Route::get('/markets', [PageController::class, 'markets'])->name('markets');
 
 /* Change lang */
-Route::get('/change-lang', [LanguageController::class, 'changeLang'])->name('change.lang');
+Route::get('/change-lang/{lang}', [LanguageController::class, 'changeLang'])->name('change.lang');

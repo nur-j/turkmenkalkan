@@ -30,4 +30,5 @@ return array (
   'store2' => 'Ashgabat city, Ata Dovletov st., 46A',
   'copyright' => 'All rights reserved',
   'title' => 'TurkmenKalkan',
+  'menu' => 'menu',
 );

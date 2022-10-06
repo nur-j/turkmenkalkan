@@ -62,7 +62,7 @@
                       </div>
                     </nav>
                   </div>
-                  <div class="shop-top-right">
+                  {{-- <div class="shop-top-right">
                     <div class="shop-sort">
                       <span>Sort By :</span>
                       <select class="form-select" aria-label="Sort select example">
@@ -73,7 +73,7 @@
                         <option value="4">Price Low to High</option>
                       </select>
                     </div>
-                  </div>
+                  </div> --}}
                 </div>
               </div>
               <div class="col-12">

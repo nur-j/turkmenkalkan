@@ -16,12 +16,38 @@
                     <ul style="align-items: center">
                       <li class="number"><i class="fa fa-phone"></i><a href="tel://+99312510443">(+993137) 36680/82, (+99312) 510443</a></li>
                       <li class="email"><i class="fa fa-envelope"></i><a href="mailto://info@turkmenkalkan.com.tm">info@turkmenkalkan.com.tm</a></li>
-                      <li>
+                      {{-- <li>
                         <select class="form-control changeLang" id="changeLang">
                           <option value="tm" {{ session()->get('locale') == 'tm' ? 'selected' : '' }}>TM</option>
                           <option value="ru" {{ session()->get('locale') == 'ru' ? 'selected' : '' }}>RU</option>
                           <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>EN</option>
                         </select>
+                      </li> --}}
+                      <li>
+                        @php $locale = session()->get('locale') @endphp
+                        <div class="dropdown">
+                          <a class="dropdown-toggle" type="button" id="langChanger" data-bs-toggle="dropdown" aria-expanded="false">
+                            @switch($locale)
+                              @case('tm')
+                                <img src="{{ asset('assetsf/img/icons/fl_tm.png') }}"  width="30" height="auto"> TM
+                                @break
+                              @case('ru')
+                                <img src="{{ asset('assetsf/img/icons/fl_ru.png') }}"  width="30" height="auto"> RU
+                                @break
+                              @case('en')
+                                <img src="{{ asset('assetsf/img/icons/fl_us.png') }}"  width="30" height="auto"> EN
+                                @break
+                            
+                              @default
+                                <img src="{{ asset('assetsf/img/icons/fl_tm.png') }}" width="30" height="auto" alt=""> TM
+                            @endswitch
+                          </a>
+                          <ul class="dropdown-menu" style="min-width: 4rem" aria-labelledby="langChanger">
+                            <li><a class="dropdown-item" href="{{ route('change.lang', 'tm') }}">TM</a></li>
+                            <li><a class="dropdown-item" href="{{ route('change.lang', 'ru') }}">RU</a></li>
+                            <li><a class="dropdown-item" href="{{ route('change.lang', 'en') }}">EN</a></li>
+                          </ul>
+                        </div>
                       </li>
                       {{-- <li class="account"><i class="fa fa-user"></i><a href="account-login.html">Account</a></li> --}}
                     </ul>

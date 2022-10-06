@@ -30,4 +30,5 @@ return array (
   'store2' => 'Aşgabat ş. Ata Döwletow köç. 46A jaý',
   'copyright' => 'Ähli hukuklary goralan',
   'title' => 'TürkmenKalkan',
+  'menu' => 'menýu',
 );

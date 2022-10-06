@@ -9709,7 +9709,7 @@ table p {
 
 @media screen and (max-width: 576px) {
   .swiper-container {
-    height: auto;
+    height: 150px;
   }
 
   .product-category-thumb {
