@@ -154,13 +154,11 @@
     <div class="offcanvas-body">
       <div class="container pt--0 pb--0">
         <div class="search-box-form-wrap">
-          <div class="search-note">
-            <p>Start typing and press Enter to search</p>
-          </div>
-          <form action="#" method="post">
+          <form action="{{ route('product.search') }}" method="GET">
+            @csrf
             <div class="search-form position-relative">
               <label for="search-input" class="visually-hidden">Search</label>
-              <input id="search-input" type="search" class="form-control" placeholder="Search entire store…">
+              <input id="search-input" name="term" class="form-control" placeholder="{{ __('general.search') }} …">
               <button class="search-button"><i class="fa fa-search"></i></button>
             </div>
           </form>
