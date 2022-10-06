@@ -9713,11 +9713,11 @@ table p {
   }
 
   .product-category-thumb {
-    background-position-x: -390px;
+    background-position-x: -380px;
   }
 
   .product-category-thumb.category_men {
-    background-position-x: -90px;
+    background-position-x: -1000px;
   }
   
 }

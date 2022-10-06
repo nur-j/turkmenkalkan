@@ -2,6 +2,8 @@
 
 @section('content')
 
+  @php $locale = session()->get('locale') @endphp
+
   <main class="main-content">
     <!--== Start Page Header Area Wrapper ==-->
     {{-- <div class="page-header-area" data-bg-img="assets/img/photos/bg3.webp">
@@ -63,7 +65,19 @@
               <div class="col-12">
                 <div class="tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-grid" role="tabpanel" aria-labelledby="nav-grid-tab">
-                    <h2>"{{ $term }}" gözleginiň netijeleri</h2>
+                    @switch($locale)
+                      @case('tm') 
+                        <h2>"{{ $term }}" gözleginiň netijeleri</h2>
+                        @break
+                      @case('ru') 
+                        <h2>результаты поиска "{{ $term }}"</h2>
+                        @break
+                      @case('en') 
+                        <h2>"{{ $term }}" search results</h2>
+                        @break
+                      @default
+                        <h2>"{{ $term }}" gözleginiň netijeleri</h2>
+                    @endswitch
                     <div class="row">
                       @if (count($products) > 0)
                         @foreach ($products as $product)
@@ -95,10 +109,42 @@
                                 <div class="product-info">
                                   <div class="category">
                                     <ul>
-                                      <li><a href="{{ route('products.category', $product->category->id) }}">{{ $product->category->title_tm }}</a></li>
+                                      <li>
+                                        <a href="{{ route('products.category', $product->category->id) }}">
+                                          @switch($locale)
+                                            @case('tm')
+                                              {{ $product->category->title_tm }}
+                                              @break
+                                            @case('ru')
+                                              {{ $product->category->title_ru }}
+                                              @break
+                                            @case('en')
+                                              {{ $product->category->title_en }}
+                                              @break
+                                            @default
+                                              {{ $product->category->title_tm }}
+                                          @endswitch
+                                        </a>
+                                      </li>
                                     </ul>
                                   </div>
-                                  <h4 class="title"><a href="{{ route('product.single', $product->id) }}">{{ $product->title_tm }}</a></h4>
+                                  <h4 class="title">
+                                    <a href="{{ route('product.single', $product->id) }}">
+                                      @switch($locale)
+                                        @case('tm')
+                                          {{ $product->title_tm }}
+                                          @break
+                                        @case('ru')
+                                          {{ $product->title_ru }}
+                                          @break
+                                        @case('en')
+                                          {{ $product->title_en }}
+                                          @break
+                                        @default
+                                          {{ $product->title_tm }}
+                                      @endswitch
+                                    </a>
+                                  </h4>
                                   {{-- <div class="prices">
                                     <span class="price-old">$300</span>
                                     <span class="sep">-</span>
@@ -111,7 +157,7 @@
                           </div>
                         @endforeach
                       @else
-                        <h2>Siziň gözleýän harydyňyz ýok</h2>
+                        <h2>{{ __('general.not_found') }}</h2>
                       @endif
                       
                                            

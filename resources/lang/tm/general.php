@@ -31,4 +31,6 @@ return array (
   'copyright' => 'Ähli hukuklary goralan',
   'title' => 'TürkmenKalkan',
   'menu' => 'menýu',
+  'results' => 'gözleginiň netijeleri',
+  'not_found' => 'Siziň gözleýän harydyňyz ýok',
 );

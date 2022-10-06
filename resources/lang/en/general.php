@@ -31,4 +31,6 @@ return array (
   'copyright' => 'All rights reserved',
   'title' => 'TurkmenKalkan',
   'menu' => 'menu',
+  'not_found' => 'Not found',
+  'results' => 'search results',
 );
