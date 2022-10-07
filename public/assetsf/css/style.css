@@ -9708,9 +9708,14 @@ table p {
 }
 
 @media screen and (max-width: 576px) {
-  .swiper-container {
-    height: 400px;
+  .swiper-container.home-slider-container {
+    height: 160px;
   }
+  .swiper-container.single-product-thumb {
+    height: 430px;
+  }
+
+  
 
   .product-category-thumb {
     background-position-x: -380px;
