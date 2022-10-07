@@ -27,7 +27,7 @@
                   <div class="widget-contact-wrap">
                     <ul>
                       <li><span><i class="fa fa-map-marker"></i></span> {{ __('general.address_real') }}</li>
-                      <li><span><i class="fa fa-phone"></i></span> <a href="#">(+993 137) 36680/82, (+993 12) 510443</a></li>
+                      <li><span><i class="fa fa-phone"></i></span> <a href="#">(+993 137) 36680, (+993 137) 36576</a></li>
                       <li><span><i class="fa fa-envelope"></i></span> <a href="#">info@turkmenkalkan.com.tm</a></li>
                     </ul>
                   </div>

@@ -14,7 +14,7 @@
                 <div class="header-info-items">
                   <div class="info-items">
                     <ul style="align-items: center">
-                      <li class="number"><i class="fa fa-phone"></i><a href="tel://+99312510443">(+993137) 36680/82, (+99312) 510443</a></li>
+                      <li class="number"><i class="fa fa-phone"></i><a href="tel://+99312510443">(+993 137) 36680, (+993 137) 36576</a></li>
                       <li class="email"><i class="fa fa-envelope"></i><a href="mailto://info@turkmenkalkan.com.tm">info@turkmenkalkan.com.tm</a></li>
                       {{-- <li>
                         <select class="form-control changeLang" id="changeLang">
