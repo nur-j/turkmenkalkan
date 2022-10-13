@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,15 +20,14 @@ use App\Http\Controllers\LanguageController;
 */
 
 /* ===============  ADMIN ROUTES =================== */
-Route::prefix('admin/kalkan/')->group(function () {
-    Route::get('/', function() {
-        return view('back.index');
-    });  
-    
+Route::get('/admin/kalkan/login', [AdminController::class, 'login']);
+Route::post('/admin/kalkan/loginpost', [AdminController::class, 'loginPost'])->name('loginPost');
+
+Route::group(['prefix' => 'admin/kalkan', 'middleware' => 'admin'], function() {
+    Route::get('/', [AdminController::class, 'index']);  
     Route::resource('categories', CategoryController::class);
     Route::resource('products', ProductController::class);
 });
-
 
 
 
