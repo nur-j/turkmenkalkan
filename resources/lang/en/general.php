@@ -33,5 +33,5 @@ return array (
   'menu' => 'menu',
   'not_found' => 'Not found',
   'results' => 'search results',
-  'text_banner' => 'You can buy products in our products',
+  'text_banner' => 'You can buy products in our stores',
 );
