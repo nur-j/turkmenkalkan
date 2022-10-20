@@ -157,14 +157,14 @@
                         <li class="discount">-10%</li>
                       </ul>
                     </div> --}}
-                    <div class="product-action">
+                    <!-- <div class="product-action">
                       <a class="btn-product-wishlist" href="#"><i class="fa fa-heart"></i></a>
                       <a class="btn-product-cart" href="#"><i class="fa fa-shopping-cart"></i></a>
                       <button type="button">
                         <i class="fa fa-arrows"></i>
                       </button>
                       <a class="btn-product-compare" href="#"><i class="fa fa-random"></i></a>
-                    </div>
+                    </div> -->
                     <a class="banner-link-overlay" href="#"></a>
                   </div>
                   <div class="product-info">
@@ -253,55 +253,8 @@
         <div class="row">
           <div class="col-12">
             <div class="feature-content-box">
-              <div class="feature-box-wrap">
-                <div class="col-item">
-                  <div class="feature-icon-box">
-                    <div class="inner-content">
-                      <div class="icon-box">
-                        <img class="icon-img" src="assetsf/img/icons/1.webp" width="55" height="41" alt="Icon-HasTech">
-                      </div>
-                      <div class="content">
-                        <h5 class="title">{{ __('general.delivery') }}</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-item">
-                  <div class="feature-icon-box">
-                    <div class="inner-content">
-                      <div class="icon-box">
-                        <img class="icon-img" src="assetsf/img/icons/2.webp" width="35" height="41" alt="Icon-HasTech">
-                      </div>
-                      <div class="content">
-                        <h5 class="title">{{ __('general.safe_payment') }}</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {{-- <div class="col-item">
-                  <div class="feature-icon-box">
-                    <div class="inner-content">
-                      <div class="icon-box">
-                        <img class="icon-img" src="assetsf/img/icons/3.webp" width="33" height="41" alt="Icon-HasTech">
-                      </div>
-                      <div class="content">
-                        <h5 class="title">Order Discount</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div> --}}
-                <div class="col-item">
-                  <div class="feature-icon-box">
-                    <div class="inner-content">
-                      <div class="icon-box">
-                        <img class="icon-img" src="assetsf/img/icons/4.webp" width="43" height="41" alt="Icon-HasTech">
-                      </div>
-                      <div class="content">
-                        <h5 class="title">24 x 7 {{ __('general.online_service') }}</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="feature-box-wrap" style="align-items: center">
+                <h3>{{ __('general.text_banner') }}</h3>
               </div>
               <div class="shape-group-style1">
                 <div class="shape-group-one"><img src="assetsf/img/shape/6.webp" width="214" height="58" alt="Image-HasTech"></div>

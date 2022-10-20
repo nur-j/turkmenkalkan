@@ -79,17 +79,17 @@
                           <li>45</li>
                         </ul>
                       </div>
-                      <div class="product-quick-action">
+                      <!-- <div class="product-quick-action">
                         <div class="qty-wrap">
                           <div class="pro-qty">
                             <input type="text" title="Quantity" value="1">
                           </div>
                         </div>
                         <a class="btn-theme" href="#">{{ __('general.add_to_cart') }}</a>
-                      </div>
-                      <div class="product-wishlist-compare">
+                      </div> -->
+                      <!-- <div class="product-wishlist-compare">
                         <a href="#"><i class="pe-7s-like"></i>{{ __('general.add_to_wishlist') }}</a>
-                      </div>
+                      </div> -->
                       {{-- <div class="product-info-footer">
                         <h6 class="code"><span>Code :</span>Ch-256xl</h6>
                         <div class="social-icons">

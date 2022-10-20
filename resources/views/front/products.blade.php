@@ -96,14 +96,14 @@
                                     <li class="discount">-10%</li>
                                   </ul>
                                 </div> --}}
-                                <div class="product-action">
+                                <!-- <div class="product-action">
                                   <a class="btn-product-wishlist" href="#"><i class="fa fa-heart"></i></a>
                                   <a class="btn-product-cart" href="#"><i class="fa fa-shopping-cart"></i></a>
                                   <button type="button" class="btn-product-quick-view-open">
                                   <i class="fa fa-arrows"></i>
                                   </button>
                                   <a class="btn-product-compare" href="#"><i class="fa fa-random"></i></a>
-                                </div>
+                                </div> -->
                                 <a class="banner-link-overlay" href="#"></a>
                               </div>
                               <div class="product-info">

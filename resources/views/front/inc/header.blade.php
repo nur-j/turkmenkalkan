@@ -92,10 +92,10 @@
                     </a>
                   </div> --}}
                   <div class="shopping-cart">
-                    <button class="shopping-cart-btn" type="button" {{-- data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasCart" aria-controls="offcanvasRightLabel" --}}>
+                    <!-- <button class="shopping-cart-btn" type="button" {{-- data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasCart" aria-controls="offcanvasRightLabel" --}}>
                       <i class="pe-7s-shopbag icon"></i>
                       {{-- <sup class="shop-count">02</sup> --}}
-                    </button>
+                    </button> -->
                   </div>
                   <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
                     <i class="pe-7s-menu"></i>

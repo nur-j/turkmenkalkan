@@ -33,4 +33,5 @@ return array (
   'menu' => 'menýu',
   'results' => 'gözleginiň netijeleri',
   'not_found' => 'Siziň gözleýän harydyňyz ýok',
+  'text_banner' => 'Harytlary dükanlarymyzdan alyp bilersiňiz',
 );
