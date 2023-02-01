@@ -28,6 +28,7 @@ return array (
   'address_real' => 'Annau city, Halklaryn dostlugy st. 24',
   'store1' => 'Ashgabat city, Oguzhan st., 3',
   'store2' => 'Ashgabat city, Ata Dovletov st., 46A',
+  'store3' => 'Annau city, Halklaryn dostlugy st. 24',
   'copyright' => 'All rights reserved',
   'title' => 'TurkmenKalkan',
   'menu' => 'menu',

@@ -28,6 +28,7 @@ return array (
   'address_real' => 'Änew ş., Halklaryň dostlugy köç., jaý 24',
   'store1' => 'Aşgabat ş. Oguzhan köç. 3 jaý',
   'store2' => 'Aşgabat ş. Ata Döwletow köç. 46A jaý',
+  'store3' => 'Änew ş., Halklaryň dostlugy köç., jaý 24',
   'copyright' => 'Ähli hukuklary goralan',
   'title' => 'TürkmenKalkan',
   'menu' => 'menýu',
