@@ -5,8 +5,9 @@
     <div class="container about__page pt-3">
       <h1>Biziň söwda dükanlarymyz</h1>
       <ul>
-        <li>Aşgabat ş. Oguzhan k. 3 jaý (+993 61 457903)</li>
-        <li>Aşgabat ş. Ata Döwletow k. 46A jaý (+993 65 712975)</li>
+        <li>{{ __('general.store1') }} (+993 61 457903)</li>
+        <li>{{ __('general.store2') }} (+993 65 712972)</li>
+        <li>{{ __('general.store3') }} (+993 65 712972)</li>
       </ul>
     </div>
     

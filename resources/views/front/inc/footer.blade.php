@@ -47,7 +47,9 @@
                     <ul class="nav-menu" style="color: white">
                       <li >{{ __('general.store1') }} <br> (+993 61) 457903</li>
                       <hr>
-                      <li>{{ __('general.store2') }} <br> (+993 65) 712975</li>
+                      <li>{{ __('general.store2') }} <br> (+993 65) 712972</li>
+                      <hr>
+                      <li>{{ __('general.store3') }} <br> (+993 65) 712972</li>
                     </ul>
                   </div>
                 </div>
